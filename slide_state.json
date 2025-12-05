@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "title": "Литоральные животные",
+    "created": 1764890267.5390484,
+    "last_updated": 1764897896.7992654,
+    "total_slides": 12
+  },
+  "slides": {
+    "title_slide": "edited",
+    "mussel_slide": "edited",
+    "mussel_video_slide": "edited",
+    "oyster_slide": "edited",
+    "littorina_slide": "edited",
+    "sea_star_slide": "edited",
+    "sea_star_video_slide": "edited",
+    "mudskipper_slide": "edited",
+    "crab_slide": "edited",
+    "crab_video_slide": "edited",
+    "adaptations_slide": "edited",
+    "conclusion_slide": "deleted"
+  },
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "Литоральные животные",
+      "summary": "Титульный слайд с названием презентации и подзаголовком о жизни между приливом и отливом.",
+      "image_plan": "/home/ubuntu/upload/search_images/XUuT2jW5canx.jpg - A good representative image of the littoral zone, showing the transition from sea to land, which is the main topic of the presentation.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mussel_slide",
+      "title": "Мидия",
+      "summary": "Слайд о мидии с описанием, адаптациями и интересным фактом.",
+      "image_plan": "/home/ubuntu/upload/search_images/gwk5UUy9ZucE.jpg - This image shows a variety of littoral animals (mussels, barnacles) on rocks, perfectly illustrating the theme of life at the border of sea and land.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mussel_video_slide",
+      "title": "Мидия в движении",
+      "summary": "Слайд с видео, демонстрирующим мидию в естественной среде.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "oyster_slide",
+      "title": "Устрица",
+      "summary": "Слайд об устрице с описанием, адаптациями и интересным фактом.",
+      "image_plan": "/home/ubuntu/upload/search_images/47fvQxEi3BZf.jpg; /home/ubuntu/upload/search_images/2lEp1B0nFve6.jpg - Image #1 shows a dense colony of mussels attached to a surface, illustrating their adaptation. Image #6 is a clear diagram showing the anatomy of a mussel.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "littorina_slide",
+      "title": "Литторина",
+      "summary": "Слайд о литторине с описанием, адаптациями и интересным фактом.",
+      "image_plan": "/home/ubuntu/upload/search_images/xcy7Y9EnHKff.jpg; /home/ubuntu/upload/search_images/a6cLTM5dEaEU.png - Image #12 shows a large oyster reef, illustrating their colony-forming and filtering role. Image #14 visually explains the filtering function mentioned in the slide.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "sea_star_slide",
+      "title": "Морская звезда",
+      "summary": "Слайд о морской звезде с описанием, адаптациями и интересным фактом.",
+      "image_plan": "/home/ubuntu/upload/search_images/BqkSIaYG7bWu.jpg - A clear, high-quality photo of a periwinkle (Littorina) on a rock, which is the main subject of this slide.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "sea_star_video_slide",
+      "title": "Галоп морской звезды",
+      "summary": "Слайд с видео, демонстрирующим движение морской звезды в естественной среде.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mudskipper_slide",
+      "title": "Илистый прыгун",
+      "summary": "Слайд об илистом прыгуне с описанием, адаптациями и интересным фактом.",
+      "image_plan": "/home/ubuntu/upload/search_images/XBdw32MeW4vd.jpg - This image shows a starfish in its natural habitat, a tide pool, which is mentioned as a survival strategy. The photo is clear and of high quality.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "crab_slide",
+      "title": "Краб",
+      "summary": "Слайд о крабе с описанием, адаптациями и интересным фактом.",
+      "image_plan": "/home/ubuntu/upload/search_images/Ea70TKyRxX3s.jpg; /home/ubuntu/upload/search_images/b2t4kcEfLVXt.jpg - Image #33 clearly shows the mudskipper on land, illustrating its main feature. Image #36 is a dynamic shot that captures the unique 'walking' ability of the fish.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "crab_video_slide",
+      "title": "Краб в естественной среде",
+      "summary": "Слайд с видео, демонстрирующим поведение краба в естественной среде.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "adaptations_slide",
+      "title": "Общие адаптации",
+      "summary": "Слайд с обзором ключевых адаптаций литоральных животных: защита от высыхания, прикрепление, поведение, выносливость.",
+      "image_plan": "/home/ubuntu/upload/search_images/kift7Q2Paw8R.jpg - A clear, high-quality image of a crab in its natural intertidal habitat, which is the subject of the slide.",
+      "slide_template_key": ""
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            overflow: hidden;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #0F172A;
+            color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            position: relative;
+        }
+
+        .content-side {
+            width: 65%;
+            height: 720px;
+            padding: 50px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-side {
+            width: 35%;
+            height: 720px;
+            position: relative;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.9);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            color: #F8FAFC;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .intro-text {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #E2E8F0;
+            margin-bottom: 36px;
+            max-width: 600px;
+        }
+
+        .adaptations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .adaptation-item {
+            border-left: 3px solid #38BDF8;
+            padding-left: 16px;
+        }
+
+        .adaptation-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #38BDF8;
+            margin-bottom: 10px;
+        }
+
+        .adaptation-item p {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #CBD5E1;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #F8FAFC;
+            background-color: rgba(15, 23, 42, 0.5);
+            padding: 5px 10px;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+    
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 16px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            padding: 12px 24px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .home-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-side">
+            <h1>Общие адаптации</h1>
+            
+            <p class="intro-text">
+                Все обитатели литоральной зоны выработали сходные стратегии выживания в экстремальных условиях периодического затопления и обнажения.
+            </p>
+
+            <div class="adaptations-grid">
+                <div class="adaptation-item">
+                    <h3>Защита от высыхания</h3>
+                    <p>Раковины, панцири, крышечки, слизь</p>
+                </div>
+
+                <div class="adaptation-item">
+                    <h3>Прочное прикрепление</h3>
+                    <p>Биссусные нити, цементация, присоски, клейкая слизь</p>
+                </div>
+
+                <div class="adaptation-item">
+                    <h3>Поведенческие стратегии</h3>
+                    <p>Укрытия, норы, групповые скопления</p>
+                </div>
+
+                <div class="adaptation-item">
+                    <h3>Физиологическая выносливость</h3>
+                    <p>Замедление метаболизма, запасы воды, терморегуляция</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-side">
+            <img src="ecosystem.jpg" alt="Литоральная экосистема">
+            <div class="slide-number">08</div>
+        </div>
+    </div>
+
+    <a href="index.html" class="home-button">☰ Меню</a>
+    <div class="nav-buttons">
+        <a href="crab_video_slide.html" class="nav-button">← Назад</a>
+        <span class="nav-button disabled">Вперёд →</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #0F172A;
+            color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #F8FAFC;
+            text-align: center;
+        }
+
+        .video-frame {
+            width: 900px;
+            height: 506px;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            border: 1px solid #334155;
+            background-color: #000;
+        }
+
+        .video-frame video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #94A3B8;
+        }
+
+    
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 16px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            padding: 12px 24px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .home-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1>Галоп морской звезды</h1>
+        
+        <div class="video-frame">
+            <video controls autoplay loop muted>
+                <source src="seastar_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+
+        <div class="slide-number">06</div>
+    </div>
+
+    <a href="index.html" class="home-button">☰ Меню</a>
+    <div class="nav-buttons">
+        <a href="sea_star_slide.html" class="nav-button">← Назад</a>
+        <a href="mudskipper_slide.html" class="nav-button">Вперёд →</a>
+    </div>
+</body>
+</html>

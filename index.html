@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Животные литорали - Презентация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: rgba(15, 23, 42, 0.8);
+            border-radius: 12px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid #334155;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #F8FAFC;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #94A3B8;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .slide-list {
+            list-style: none;
+        }
+
+        .slide-item {
+            margin-bottom: 16px;
+        }
+
+        .slide-link {
+            display: block;
+            padding: 20px 24px;
+            background-color: rgba(56, 189, 248, 0.1);
+            border: 2px solid #334155;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .slide-link:hover {
+            background-color: rgba(56, 189, 248, 0.2);
+            border-color: #38BDF8;
+            transform: translateX(8px);
+        }
+
+        .slide-number {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 600;
+            color: #38BDF8;
+            font-size: 20px;
+        }
+
+        .start-button {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .start-button a {
+            display: inline-block;
+            padding: 16px 48px;
+            background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
+            color: #0F172A;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .start-button a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(56, 189, 248, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Животные литорали</h1>
+        <p class="subtitle">Приливно-отливная зона и её обитатели</p>
+
+        <ul class="slide-list">
+            <li class="slide-item">
+                <a href="title_slide.html" class="slide-link">
+                    <span class="slide-number">01</span>
+                    Титульный слайд
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="mussel_slide.html" class="slide-link">
+                    <span class="slide-number">02</span>
+                    Мидия
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="mussel_video_slide.html" class="slide-link">
+                    <span class="slide-number">03</span>
+                    Мидия в естественной среде (видео)
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="oyster_slide.html" class="slide-link">
+                    <span class="slide-number">04</span>
+                    Устрица
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="littorina_slide.html" class="slide-link">
+                    <span class="slide-number">05</span>
+                    Литторина
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="sea_star_slide.html" class="slide-link">
+                    <span class="slide-number">06</span>
+                    Морская звезда
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="sea_star_video_slide.html" class="slide-link">
+                    <span class="slide-number">07</span>
+                    Галоп морской звезды (видео)
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="mudskipper_slide.html" class="slide-link">
+                    <span class="slide-number">08</span>
+                    Илистый прыгун
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="crab_slide.html" class="slide-link">
+                    <span class="slide-number">09</span>
+                    Краб
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="crab_video_slide.html" class="slide-link">
+                    <span class="slide-number">10</span>
+                    Краб в естественной среде (видео)
+                </a>
+            </li>
+            <li class="slide-item">
+                <a href="adaptations_slide.html" class="slide-link">
+                    <span class="slide-number">11</span>
+                    Общие адаптации
+                </a>
+            </li>
+        </ul>
+
+        <div class="start-button">
+            <a href="title_slide.html">Начать презентацию</a>
+        </div>
+    </div>
+</body>
+</html>

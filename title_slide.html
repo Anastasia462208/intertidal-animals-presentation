@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #0F172A;
+            color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 80px 80px 64px 80px; /* keep top padding, reduce bottom to fit within 720 */
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-content {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            line-height: 1.1;
+            color: #38BDF8;
+            margin-bottom: 8px; /* reduced to save height while keeping title prominent */
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 300;
+            color: #CBD5E1;
+            margin-bottom: 20px; /* reduced spacing */
+            border-left: 4px solid #38BDF8;
+            padding-left: 20px;
+            line-height: 1; /* tighter line height to reduce block height */
+        }
+
+        .intro-text {
+            font-size: 32px; /* keep font size */
+            line-height: 1.2; /* tightened to reduce height without changing font size */
+            color: #E2E8F0;
+            margin-top: 0; /* remove extra top margin to save space */
+        }
+
+        .decorative-line {
+            width: 80px;
+            height: 4px;
+            background-color: #38BDF8;
+            margin-bottom: 32px;
+        }
+
+    
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 16px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            padding: 12px 24px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .home-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="text-content">
+            <div class="decorative-line"></div>
+            <h1>Литоральные животные</h1>
+            <div class="subtitle">Жизнь между приливом и отливом</div>
+            
+            <p class="intro-text">
+                Литоральная зона — это уникальная экосистема на границе моря и суши, где животные дважды в день переживают затопление и обнажение. Обитатели этой зоны выработали удивительные адаптации для выживания в экстремальных условиях.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="mudskipper_cover.jpg" alt="Илистый прыгун на камне">
+        </div>
+    </div>
+
+    <a href="index.html" class="home-button">☰ Меню</a>
+    <div class="nav-buttons">
+        <span class="nav-button disabled">← Назад</span>
+        <a href="mussel_slide.html" class="nav-button">Вперёд →</a>
+    </div>
+</body>
+</html>

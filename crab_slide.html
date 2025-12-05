@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #0F172A;
+            color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            padding: 40px 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .header-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .image-frame {
+            width: 350px;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+            flex-shrink: 0;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .title-section {
+            flex: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            color: #F8FAFC;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .systematics {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #38BDF8;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .description {
+            font-size: 22px;
+            line-height: 1.4;
+            color: #E2E8F0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #38BDF8;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 19px;
+            line-height: 1.4;
+            color: #CBD5E1;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: #38BDF8;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .fun-fact {
+            background-color: rgba(56, 189, 248, 0.1);
+            border-left: 4px solid #38BDF8;
+            padding: 15px;
+            grid-column: 1 / -1;
+        }
+
+        .fun-fact h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #38BDF8;
+            margin-bottom: 8px;
+        }
+
+        .fun-fact p {
+            font-size: 19px;
+            font-style: italic;
+            color: #E2E8F0;
+            line-height: 1.4;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #94A3B8;
+        }
+
+    
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 16px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            padding: 12px 24px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: rgba(56, 189, 248, 0.2);
+            border: 2px solid #38BDF8;
+            border-radius: 8px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .home-button:hover {
+            background-color: rgba(56, 189, 248, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-section">
+            <div class="image-frame">
+                <img src="краб.jpg" alt="Краб">
+            </div>
+            <div class="title-section">
+                <h1>Краб</h1>
+                <div class="systematics">Царство: Животные • Тип: Членистоногие • Класс: Высшие раки</div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <p class="description">
+                Десятиногий рак с широким телом, мощными клешнями и твёрдым панцирем. Всеядный падальщик и хищник, очищающий литораль от органических остатков. Демонстрирует сложное поведение и коммуникацию.
+            </p>
+
+            <div>
+                <h3 class="section-title">Адаптации к литорали</h3>
+                <ul>
+                    <li><strong>Твёрдый хитиновый панцирь</strong> — защита от высыхания и хищников.</li>
+                    <li><strong>Жаберные камеры</strong> — запас воды для дыхания на суше до нескольких дней.</li>
+                    <li><strong>Норы в песке или иле</strong> — доступ к грунтовым водам.</li>
+                </ul>
+            </div>
+
+            <div class="fun-fact">
+                <h3>Интересный факт</h3>
+                <p>Крабы могут отбрасывать свои конечности по желанию! Это автотомия — способность добровольно отбросить клешню или ногу, чтобы спастись от хищника. Потерянная конечность продолжает двигаться, отвлекая врага.</p>
+            </div>
+        </div>
+
+        <div class="slide-number">09</div>
+    </div>
+
+    <a href="index.html" class="home-button">☰ Меню</a>
+    <div class="nav-buttons">
+        <a href="mudskipper_slide.html" class="nav-button">← Назад</a>
+        <a href="crab_video_slide.html" class="nav-button">Вперёд →</a>
+    </div>
+</body>
+</html>
